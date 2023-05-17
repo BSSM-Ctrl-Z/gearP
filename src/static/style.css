@@ -12,6 +12,7 @@
 html, body{
     margin: 0;
     padding: 0;
+    height: 100%;
 }
 
 a {
@@ -21,7 +22,10 @@ a {
 #warp{
     min-height: 100vh;
     position: relative;
-    width: 100%;
+    width: auto;
+    height: auto;
+    min-height: 100%;
+    padding-bottom: 110px;
 }
 
 header {
@@ -44,8 +48,8 @@ section{
 footer{
     width: 100%;
     height: 110px;
-    bottom: 0px;
-    position: absolute;
+    bottom: -50vh;
+    position: relative;
     display: block;
     background-color: #a5a5a5;
 
@@ -106,4 +110,9 @@ fieldset {
     height: 105px;
     background-color: black;
     position: absolute;
+}
+
+.form {
+    display: inline-block;
+    width: 30%;
 }
